@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- boottstap library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playwrite+VN:wght@100..400&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fornt aowsom for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+  </head>
+
+  <body >
+    <div class="row no-gutters">
+      <div class="col" style="background-color: rgb(0, 88, 88)">
+        <div class="leftside">
+          <h1>Welcome Abeer!</h1>
+          <p>
+            Start your journey toward productivity and success. Remember, every
+            small task you complete brings you closer to achieving your goals.
+            <br />Let’s conquer the day, one checkbox at a time!
+          </p>
+          <input id="input" type="text" placeholder="Write your new tasks here... " />
+          <button  id="addbut">Add</button>
+        </div>
+      </div>
+
+      <div class="col" style="background-color: rgb(228, 249, 249)">
+        <div class="rightside" >
+          <div class="bigBox" >
+            <div class="titleBox" >
+              <h1>My Tasks</h1>
+            </div>
+
+            <!-- TASKS -->
+            <div id="tasks" class="tasks" style=" direction: ltr; padding: 20px;" >
+              <!-- TASK -->
+              <div class="task" id="task">
+                <!-- TASKs INFO -->
+                <div id="taskInfo" style="width: 70%; text-align: left;">
+                    <h2 id="titleTask"></h2>
+                    <div>
+                        <span id="dateTask">
+                           
+                        </span>
+                    </div>
+                </div>
+                <!-- TASKs INFO // -->
+                <!-- TASKs ACTIONA -->
+                <div id="taskAction" style="display: flex; justify-content: space-between; align-items: center; width: 30%; "  >
+                    <button class="circular" style="background-color: rgb(239, 73, 73);"><i class="fa-solid fa-trash-can"></i></button>
+                    <button class="circular" style="background-color: rgb(52, 58, 231);"><i class="fa-solid fa-check-to-slot"></i></button>
+                    <button class="circular" style="background-color: rgb(64, 229, 53);"><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+                <!-- TASKs ACTIONA // -->
+              </div>
+
+    
+              <!--// TASK // -->
+            </div>
+            <!--// TASKS // -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <i class="fa-solid fa-trash-can"></i>
+    <i class="fa-solid fa-check-to-slot"></i>
+    <i class="fa-solid fa-pen-to-square"></i> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
